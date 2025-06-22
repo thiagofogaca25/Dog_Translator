@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background: #fdf6e3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+        font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    margin-top: 10px;
+    color: #ff5722;
+    font-size: 7rem;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Formulário ocupa 100% largura disponível */
+form, #result-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Textarea ocupa todo espaço horizontal, altura natural */
+textarea {
+    font-size: 2.5rem;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-bottom: 15px;
+    width: 100%;
+    min-height: 350px;
+}
+
+/* Select e botão ocupam 100% da largura */
+select, button {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.25s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Resultado ocupa largura total, cresce conforme conteúdo */
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #f8f0da;
+    color: #fd3b00;
+    padding: 15px;
+    font-size: 2.5rem;
+    word-break: break-word;
+    width: 90%;
+}
+
+footer {
+  position: fixed;
+  font-size: 2rem;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
